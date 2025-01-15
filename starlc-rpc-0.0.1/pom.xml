@@ -8,6 +8,7 @@
     <artifactId>starlc-rpc-0.0.1</artifactId>
     <packaging>pom</packaging>
     <version>${revision}</version>
+
     <parent>
         <groupId>com.starlc</groupId>
         <artifactId>starlc-parent</artifactId>
@@ -16,42 +17,14 @@
     </parent>
     <properties>
         <revision>0.0.1-SNAPSHOT</revision>
-        <java.version>1.8</java.version>
-        <maven.compiler.source>${java.version}</maven.compiler.source>
-        <maven.compiler.target>${java.version}</maven.compiler.target>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
     <modules>
-<!--        <module>starlc-common-build</module>-->
+        <module>starlc-rpc</module>
+        <module>starlc-registry</module>
+        <module>starlc-transport</module>
+        <module>starlc-serialization</module>
+        <module>starlc-protocol</module>
+        <module>starlc-registry</module>
     </modules>
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.codehaus.mojo</groupId>
-                <artifactId>flatten-maven-plugin</artifactId>
-                <version>1.2.5</version>
-                <configuration>
-                    <updatePomFile>true</updatePomFile>
-                    <flattenMode>resolveCiFriendliesOnly</flattenMode>
-                </configuration>
-                <executions>
-                    <execution>
-                        <id>flatten</id>
-                        <phase>process-resources</phase>
-                        <goals>
-                            <goal>flatten</goal>
-                        </goals>
-                    </execution>
-                    <execution>
-                        <id>flatten.clean</id>
-                        <phase>clean</phase>
-                        <goals>
-                            <goal>clean</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
-        </plugins>
-    </build>
 
 </project>

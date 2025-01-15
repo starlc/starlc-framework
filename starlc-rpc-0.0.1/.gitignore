@@ -1,0 +1,60 @@
+## IntelliJ IDEA ##
+.idea/
+/*.iml
+*.iml
+*.ipr
+*.iws
+
+## DUBBO ##
+.metadata/
+
+##MAVEN##
+dependency-reduced-pom.xml
+
+## Package Files ##
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+## LOG ##
+*.log
+
+## JRebel ##
+rebel.xml
+
+## MAC ##
+.DS_Store
+
+## STS ##
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings/
+.settings
+.springBeans
+
+## JDK ##
+*.class
+*.lock
+*.swp
+*.out
+target/
+**/bin/*
+/out/
+*.bak
+
+## Cache or Tmp ##
+*.cache
+*.diff
+*.patch
+*.tmp
+hs_err_pid*
+
+## Maven ignore ##
+.flattened-pom.xml
+**/.flattened-pom.xml
+**/*/.flattened-pom.xml
