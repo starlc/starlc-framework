@@ -5,9 +5,15 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.starlc</groupId>
-    <artifactId>starlc-parent</artifactId>
+    <artifactId>starlc-rpc-0.0.1</artifactId>
     <packaging>pom</packaging>
     <version>${revision}</version>
+    <parent>
+        <groupId>com.starlc</groupId>
+        <artifactId>starlc-parent</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+        <relativePath/>
+    </parent>
     <properties>
         <revision>0.0.1-SNAPSHOT</revision>
         <java.version>1.8</java.version>
@@ -16,7 +22,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
     <modules>
-        <module>starlc-common-build</module>
+<!--        <module>starlc-common-build</module>-->
     </modules>
     <build>
         <plugins>

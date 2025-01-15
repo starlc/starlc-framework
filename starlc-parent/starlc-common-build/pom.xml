@@ -4,7 +4,11 @@
     <packaging>pom</packaging>
     <version>${revision}</version>
     <groupId>com.starlc.common</groupId>
-
+    <parent>
+        <groupId>com.starlc</groupId>
+        <artifactId>starlc-parent</artifactId>
+        <version>${revision}</version>
+    </parent>
     <properties>
         <revision>0.0.1-SNAPSHOT</revision>
         <java.version>1.8</java.version>
