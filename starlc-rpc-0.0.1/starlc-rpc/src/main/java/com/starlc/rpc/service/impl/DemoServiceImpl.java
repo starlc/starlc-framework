@@ -11,4 +11,9 @@ public class DemoServiceImpl implements DemoService {
         System.out.println("msg:"+name);
         return MessageFormat.format(MSG,name);
     }
+
+    @Override
+    public Long check(int len) {
+        return 10086L;
+    }
 }

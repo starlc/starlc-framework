@@ -14,6 +14,8 @@ public class Consumer {
         DemoService demoService = DemoRpcProxy.newInstance(DemoService.class, discovery);
         //调用sayHello()方法，并输出结果
         String result = demoService.sayHello("张三");
+        Long ss = demoService.check(11);
         System.out.println(result);
+        System.out.println(ss);
     }
 }
