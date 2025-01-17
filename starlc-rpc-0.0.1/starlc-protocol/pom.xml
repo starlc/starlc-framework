@@ -13,6 +13,12 @@
     <artifactId>starlc-protocol</artifactId>
     <packaging>jar</packaging>
     <version>${revision}</version>
-
+    <dependencies>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.20</version>
+        </dependency>
+    </dependencies>
 
 </project>

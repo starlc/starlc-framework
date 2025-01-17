@@ -26,5 +26,12 @@
         <module>starlc-protocol</module>
         <module>starlc-registry</module>
     </modules>
-
+    <dependencies>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <scope>provided</scope>
+            <version>1.18.20</version>
+        </dependency>
+    </dependencies>
 </project>
