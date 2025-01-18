@@ -25,6 +25,7 @@
         <module>starlc-serialization</module>
         <module>starlc-protocol</module>
         <module>starlc-registry</module>
+        <module>starlc-server</module>
     </modules>
     <dependencies>
         <dependency>
