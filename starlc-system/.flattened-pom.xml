@@ -4,10 +4,10 @@
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>com.starlc</groupId>
-    <artifactId>starlc-common-parent</artifactId>
+    <artifactId>starlc-project</artifactId>
     <version>0.0.1-SNAPSHOT</version>
   </parent>
-  <groupId>com.starlc.system</groupId>
+  <groupId>com.starlc</groupId>
   <artifactId>starlc-system</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>pom</packaging>
@@ -18,4 +18,7 @@
     <module>starlc-system-web</module>
     <module>starlc-system-async-service</module>
   </modules>
+  <properties>
+    <revision>0.0.1-SNAPSHOT</revision>
+  </properties>
 </project>

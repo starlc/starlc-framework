@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>com.starlc</groupId>
-    <artifactId>starlc-service-parent</artifactId>
+    <artifactId>starlc-system</artifactId>
     <version>0.0.1-SNAPSHOT</version>
   </parent>
   <groupId>com.starlc</groupId>
@@ -16,6 +16,11 @@
       <groupId>com.starlc</groupId>
       <artifactId>starlc-system-api</artifactId>
       <version>0.0.1-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+      <groupId>com.starlc</groupId>
+      <artifactId>starlc-service-parent</artifactId>
+      <type>pom</type>
     </dependency>
   </dependencies>
 </project>

@@ -4,11 +4,18 @@
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>com.starlc</groupId>
-    <artifactId>starlc-api-parent</artifactId>
+    <artifactId>starlc-system</artifactId>
     <version>0.0.1-SNAPSHOT</version>
   </parent>
   <groupId>com.starlc</groupId>
   <artifactId>starlc-system-api</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <description>系统服务API模块，包含实体类和接口定义</description>
+  <dependencies>
+    <dependency>
+      <groupId>com.starlc</groupId>
+      <artifactId>starlc-api-parent</artifactId>
+      <type>pom</type>
+    </dependency>
+  </dependencies>
 </project>

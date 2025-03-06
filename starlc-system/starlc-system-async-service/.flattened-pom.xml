@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>com.starlc</groupId>
-    <artifactId>starlc-async-parent</artifactId>
+    <artifactId>starlc-system</artifactId>
     <version>0.0.1-SNAPSHOT</version>
   </parent>
   <groupId>com.starlc</groupId>
@@ -15,7 +15,12 @@
     <dependency>
       <groupId>com.starlc</groupId>
       <artifactId>starlc-system-api</artifactId>
-      <version>0.0.1-SNAPSHOT</version>
+      <version>${revision}</version>
+    </dependency>
+    <dependency>
+      <groupId>com.starlc</groupId>
+      <artifactId>starlc-async-parent</artifactId>
+      <type>pom</type>
     </dependency>
   </dependencies>
 </project>

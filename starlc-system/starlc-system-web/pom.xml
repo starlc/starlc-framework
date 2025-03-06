@@ -3,25 +3,31 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <groupId>com.starlc.common</groupId>
-        <artifactId>starlc-web-parent</artifactId>
-        <version>${revision}</version>
-        <relativePath>../../starlc-parent/starlc-commons/starlc-web-parent/pom.xml</relativePath>
+        <groupId>com.starlc</groupId>
+        <artifactId>starlc-system</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>starlc-system-web</artifactId>
-    <packaging>jar</packaging>
+    <!-- <packaging>jar</packaging> -->
     <description>系统服务Web层</description>
+
+    <properties>
+        <revision>0.0.1-SNAPSHOT</revision>
+    </properties>
 
     <dependencies>
         <dependency>
-            <groupId>com.starlc.system</groupId>
+            <groupId>com.starlc</groupId>
             <artifactId>starlc-system-api</artifactId>
             <version>${revision}</version>
         </dependency>
-        
-
+        <dependency>
+            <groupId>com.starlc</groupId>
+            <artifactId>starlc-web-parent</artifactId>
+            <type>pom</type>
+        </dependency>
     </dependencies>
 
     <build>
