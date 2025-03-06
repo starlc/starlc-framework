@@ -4,8 +4,9 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
         <artifactId>starlc-common-parent</artifactId>
-        <groupId>com.starlc</groupId>
-        <version>0.0.1-SNAPSHOT</version>
+        <groupId>com.starlc.common</groupId>
+        <version>${revision}</version>
+        <relativePath>../starlc-parent/starlc-common-build/starlc-common-parent/pom.xml</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
