@@ -11,7 +11,7 @@
 
     <parent>
         <groupId>com.starlc</groupId>
-        <artifactId>starlc-parent</artifactId>
+        <artifactId>starlc-common-parent</artifactId>
         <version>0.0.1-SNAPSHOT</version>
         <relativePath/>
     </parent>
@@ -24,7 +24,6 @@
         <module>starlc-transport</module>
         <module>starlc-serialization</module>
         <module>starlc-protocol</module>
-        <module>starlc-registry</module>
         <module>starlc-server</module>
     </modules>
     <dependencies>
@@ -32,7 +31,6 @@
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <scope>provided</scope>
-            <version>1.18.20</version>
         </dependency>
     </dependencies>
 </project>

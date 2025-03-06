@@ -41,9 +41,9 @@ public class DemoRpcServer {
                 { // 指定每个Channel上注册的ChannelHandler以及顺序
                     protected void initChannel(SocketChannel ch) {
                         ch.pipeline().addLast("demp-rpc-decoder",
-                                new DemoRpcDecoder());
+                                new DemoRpcDecoder());//ChannelInboundHandlerAdapter
                         ch.pipeline().addLast("demo-rpc-encoder",
-                                new DemoRpcEncoder());
+                                new DemoRpcEncoder());//ChannelOutboundHandlerAdapter
                         ch.pipeline().addLast("server-handler",
                                 new DemoRpcServerHandler());
                     }
