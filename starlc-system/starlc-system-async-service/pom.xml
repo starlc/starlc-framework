@@ -10,7 +10,6 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>starlc-system-async-service</artifactId>
-    <!-- <packaging>jar</packaging> -->
     <description>系统服务异步任务层</description>
 
     <dependencies>
