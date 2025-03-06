@@ -25,6 +25,7 @@
         <module>starlc-common-seata</module>
         <module>starlc-common-sentinel</module>
         <module>starlc-service-parent</module>
+        <module>starlc-common-bom</module>
     </modules>
 
     <scm>

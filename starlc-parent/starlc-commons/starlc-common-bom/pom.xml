@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>starlc-common-bom</artifactId>
+    <packaging>pom</packaging>
+    <version>${revision}</version>
+    <groupId>com.starlc</groupId>
+    <parent>
+        <artifactId>starlc-commons</artifactId>
+        <groupId>com.starlc</groupId>
+        <version>${revision}</version>
+    </parent>
+    <properties>
+        <revision>0.0.1-SNAPSHOT</revision>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <!-- Web Parent -->
+            <dependency>
+                <groupId>com.starlc</groupId>
+                <artifactId>starlc-web-parent</artifactId>
+                <version>${revision}</version>
+                <type>pom</type>
+            </dependency>
+            <!-- API Parent -->
+            <dependency>
+                <groupId>com.starlc</groupId>
+                <artifactId>starlc-api-parent</artifactId>
+                <version>${revision}</version>
+                <type>pom</type>
+            </dependency>
+            <!-- Async Parent -->
+            <dependency>
+                <groupId>com.starlc</groupId>
+                <artifactId>starlc-async-parent</artifactId>
+                <version>${revision}</version>
+                <type>pom</type>
+            </dependency>
+            <!-- Common Core -->
+            <dependency>
+                <groupId>com.starlc</groupId>
+                <artifactId>starlc-common-core</artifactId>
+                <version>${revision}</version>
+            </dependency>
+            <!-- Common Nacos -->
+            <dependency>
+                <groupId>com.starlc</groupId>
+                <artifactId>starlc-common-nacos</artifactId>
+                <version>${revision}</version>
+            </dependency>
+            <!-- Common Seata -->
+            <dependency>
+                <groupId>com.starlc</groupId>
+                <artifactId>starlc-common-seata</artifactId>
+                <version>${revision}</version>
+            </dependency>
+            <!-- Common Sentinel -->
+            <dependency>
+                <groupId>com.starlc</groupId>
+                <artifactId>starlc-common-sentinel</artifactId>
+                <version>${revision}</version>
+            </dependency>
+            <!-- Service Parent -->
+            <dependency>
+                <groupId>com.starlc</groupId>
+                <artifactId>starlc-service-parent</artifactId>
+                <version>${revision}</version>
+                <type>pom</type>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <description>依赖版本管理模块</description>
+</project>
