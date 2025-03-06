@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
         <artifactId>starlc-commons</artifactId>
-        <groupId>com.starlc.common</groupId>
+        <groupId>com.starlc</groupId>
         <version>${revision}</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
@@ -16,7 +16,7 @@
     <dependencies>
         <!-- Common Core -->
         <dependency>
-            <groupId>com.starlc.common</groupId>
+            <groupId>com.starlc</groupId>
             <artifactId>starlc-common-core</artifactId>
             <version>${revision}</version>
         </dependency>
