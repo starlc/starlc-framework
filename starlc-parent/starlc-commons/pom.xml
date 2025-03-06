@@ -1,10 +1,14 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>starlc-common-build</artifactId>
+    <artifactId>starlc-commons</artifactId>
     <packaging>pom</packaging>
     <version>${revision}</version>
     <groupId>com.starlc</groupId>
-    <name>starlc-common-build</name>
+    <parent>
+        <artifactId>starlc-common-parent</artifactId>
+        <groupId>com.starlc</groupId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
     <properties>
         <revision>0.0.1-SNAPSHOT</revision>
         <java.version>1.8</java.version>
@@ -13,8 +17,14 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
     <modules>
-        <module>starlc-common-dependencies</module>
-        <module>starlc-common-parent</module>
+        <module>starlc-web-parent</module>
+        <module>starlc-api-parent</module>
+        <module>starlc-async-parent</module>
+        <module>starlc-common-core</module>
+        <module>starlc-common-nacos</module>
+        <module>starlc-common-seata</module>
+        <module>starlc-common-sentinel</module>
+        <module>starlc-service-parent</module>
     </modules>
 
     <scm>
