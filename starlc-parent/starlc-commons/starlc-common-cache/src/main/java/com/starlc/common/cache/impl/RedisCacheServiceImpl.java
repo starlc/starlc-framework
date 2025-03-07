@@ -5,6 +5,10 @@ import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.core.StringRedisTemplate;
 
 import java.util.concurrent.TimeUnit;
+import java.util.List;
+import java.util.Set;
+import java.util.Map;
+import java.util.HashMap;
 
 /**
  * Redis缓存实现类
@@ -68,7 +72,10 @@ public class RedisCacheServiceImpl implements CacheService {
     @Override
     @SuppressWarnings("unchecked")
     public <T> Map<String, T> hgetAll(String key, Class<T> clazz) {
-        return (Map<String, T>) redisTemplate.opsForHash().entries(key);
+        Map<Object, Object> entries = redisTemplate.opsForHash().entries(key);
+        Map<String, T> result = new HashMap<>();
+        entries.forEach((k, v) -> result.put(k.toString(), (T) v));
+        return result;
     }
 
     @Override

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <groupId>com.starlc</groupId>
+        <artifactId>starlc-demo</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>starlc-demo-api</artifactId>
+    <description>示例服务API模块，包含实体类和接口定义</description>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.starlc</groupId>
+            <artifactId>starlc-api-parent</artifactId>
+            <type>pom</type>
+        </dependency>
+    </dependencies>
+</project>

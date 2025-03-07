@@ -36,9 +36,16 @@
         <snappy.version>1.1.10.1</snappy.version>
         <jakarta.version>5.0.0</jakarta.version>
         <jakarta-validation.version>2.0.2</jakarta-validation.version>
+        <rocketmq.version>2.0.4</rocketmq.version>
     </properties>
     <dependencyManagement>
         <dependencies>
+            <!-- RocketMQ -->
+            <dependency>
+                <groupId>org.apache.rocketmq</groupId>
+                <artifactId>rocketmq-spring-boot-starter</artifactId>
+                <version>${rocketmq.version}</version>
+            </dependency>
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-dependencies</artifactId>
@@ -69,6 +76,12 @@
                 <version>${spring-cloud-alibaba.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
+            </dependency>
+            <!-- Spring Mail -->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-mail</artifactId>
+                <version>${spring-boot.version}</version>
             </dependency>
 
             <!-- MySQL -->
@@ -191,7 +204,12 @@
                 <version>${hutool.version}</version>
             </dependency>
 
-
+            <!-- Guava Cache -->
+            <dependency>
+                <groupId>com.google.guava</groupId>
+                <artifactId>guava</artifactId>
+                 <version>${guava.version}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 </project>

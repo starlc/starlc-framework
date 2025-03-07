@@ -63,12 +63,25 @@
                 <artifactId>starlc-common-sentinel</artifactId>
                 <version>${revision}</version>
             </dependency>
+            <!-- Common MQ -->
+            <dependency>
+                <groupId>com.starlc</groupId>
+                <artifactId>starlc-common-mq</artifactId>
+                <version>${revision}</version>
+            </dependency>
             <!-- Service Parent -->
             <dependency>
                 <groupId>com.starlc</groupId>
                 <artifactId>starlc-service-parent</artifactId>
                 <version>${revision}</version>
                 <type>pom</type>
+            </dependency>
+
+            <!-- Common Redis -->
+            <dependency>
+                <groupId>com.starlc</groupId>
+                <artifactId>starlc-common-cache</artifactId>
+                <version>${revision}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
