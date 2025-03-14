@@ -34,6 +34,7 @@
         <netty.version>4.1.66.Final</netty.version>
         <hessian.version>4.0.51</hessian.version>
         <snappy.version>1.1.10.1</snappy.version>
+        <aspectjweaver.version>1.9.7</aspectjweaver.version>
         <jakarta.version>5.0.0</jakarta.version>
         <jakarta-validation.version>2.0.2</jakarta-validation.version>
         <rocketmq.version>2.0.4</rocketmq.version>
@@ -197,6 +198,13 @@
                 <groupId>org.xerial.snappy</groupId>
                 <artifactId>snappy-java</artifactId>
                 <version>${snappy.version}</version>
+            </dependency>
+
+            <!-- AspectJ -->
+            <dependency>
+                <groupId>org.aspectj</groupId>
+                <artifactId>aspectjweaver</artifactId>
+                <version>${aspectjweaver.version}</version>
             </dependency>
 
             <dependency>
