@@ -1,0 +1,4 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.starlc.common.cache.redis.config.RedisAutoConfigure,\
+com.starlc.common.cache.redis.lock.RedissonDistributedLock,\
+com.starlc.common.cache.redis.RedisRepository
