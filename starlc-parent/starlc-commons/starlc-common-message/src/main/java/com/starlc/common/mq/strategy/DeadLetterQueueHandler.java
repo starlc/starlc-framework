@@ -19,7 +19,10 @@ public class DeadLetterQueueHandler implements FailureHandler {
     private static final String DEAD_LETTER_TOPIC_PREFIX = "%DLQ%";
 
     @Override
-    public void handleFailure(String topic, String tags, String keys, Object message, int failureCount, Throwable lastError) {
+    public void handleFailure(Object message, com.starlc.common.message.Message messageProperties, int failureCount, Throwable lastError) {
+        String topic = messageProperties.getTopic();
+        String tags = messageProperties.getTags();
+        String keys = messageProperties.getKeys();
         String deadLetterTopic = DEAD_LETTER_TOPIC_PREFIX + topic;
         try {
             Message<?> deadLetterMessage = MessageBuilder.withPayload(message)

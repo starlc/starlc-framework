@@ -6,7 +6,6 @@ import lombok.extern.slf4j.Slf4j;
 import org.apache.rocketmq.spring.annotation.MessageModel;
 import org.apache.rocketmq.spring.annotation.RocketMQMessageListener;
 import org.apache.rocketmq.spring.core.RocketMQListener;
-import org.springframework.beans.factory.annotation.Autowired;
 
 /**
  * 消息消费者抽象基类
@@ -14,10 +13,9 @@ import org.springframework.beans.factory.annotation.Autowired;
  */
 @Slf4j
 @RequiredArgsConstructor
-public abstract class AbstractMessageConsumer<T> implements RocketMQListener<T> {
+public abstract class AbstractMessageConsumer<T> implements RocketMQListener<T>, MessageConsumer<T> {
 
-    @Autowired
-    private MessageFailureProperties failureProperties;
+    private final MessageFailureProperties failureProperties;
 
     @Override
     public void onMessage(T message) {
