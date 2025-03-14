@@ -3,14 +3,12 @@ package com.starlc.common.lock;
 import java.util.concurrent.TimeUnit;
 
 /**
- * 分布式锁顶级接口
- *
- * @author zlt
- * @date 2018/5/29 14:12
- * <p>
- * Blog: https://zlt2000.gitee.io
- * Github: https://github.com/zlt2000
- */
+* @Description:    分布式锁顶级接口
+* @Author:         liuc
+* @CreateDate:     2025/3/14 17:28
+* @UpdateRemark:   修改内容
+* @Version:        1.0
+*/
 public interface DistributedLock {
     /**
      * 获取锁，如果获取不成功则一直等待直到lock被获取
