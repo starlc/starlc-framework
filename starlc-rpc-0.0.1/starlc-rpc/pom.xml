@@ -9,7 +9,7 @@
         <version>${revision}</version>
     </parent>
 
-    <groupId>com.starlc.rpc</groupId>
+    <groupId>com.starlc</groupId>
     <artifactId>starlc-rpc</artifactId>
     <packaging>jar</packaging>
     <version>${revision}</version>

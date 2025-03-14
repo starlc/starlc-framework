@@ -9,7 +9,7 @@
         <version>${revision}</version>
     </parent>
 
-    <groupId>com.starlc.register</groupId>
+    <groupId>com.starlc</groupId>
     <artifactId>starlc-transport</artifactId>
     <packaging>jar</packaging>
     <version>${revision}</version>
@@ -21,7 +21,7 @@
     </properties>
     <dependencies>
         <dependency>
-            <groupId>com.starlc.protocol</groupId>
+            <groupId>com.starlc</groupId>
             <artifactId>starlc-protocol</artifactId>
             <version>${revision}</version>
         </dependency>
@@ -30,13 +30,13 @@
             <artifactId>netty-all</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.starlc.serialization</groupId>
+            <groupId>com.starlc</groupId>
             <artifactId>starlc-serialization</artifactId>
             <version>${revision}</version>
             <scope>compile</scope>
         </dependency>
         <dependency>
-            <groupId>com.starlc.registry</groupId>
+            <groupId>com.starlc</groupId>
             <artifactId>starlc-registry</artifactId>
             <version>${revision}</version>
             <scope>compile</scope>
