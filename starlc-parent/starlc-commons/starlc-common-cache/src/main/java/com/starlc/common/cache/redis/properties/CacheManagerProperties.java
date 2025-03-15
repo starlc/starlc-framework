@@ -16,7 +16,7 @@ import lombok.Setter;
 */
 @Setter
 @Getter
-@ConfigurationProperties(prefix = "zlt.cache-manager")
+@ConfigurationProperties(prefix = "cache-manager")
 public class CacheManagerProperties {
     private List<CacheConfig> configs;
 
