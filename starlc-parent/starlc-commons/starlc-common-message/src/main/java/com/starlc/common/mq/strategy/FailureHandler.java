@@ -1,7 +1,6 @@
 package com.starlc.common.mq.strategy;
 
 
-import com.starlc.common.message.Message;
 
 /**
  * 消息发送失败处理策略接口
@@ -16,20 +15,20 @@ public interface FailureHandler {
     /**
      * 处理失败的消息
      *
-     * @param topic 主题
-     * @param tags 标签
-     * @param keys 消息键
-     * @param message 消息内容
+     * @param message 消息内容，可以是任意类型
+     * @param destination 目标主题或队列
+     * @param properties 消息属性，包含不同消息中间件的特殊参数
      * @param failureCount 失败次数
-     * @param lastError 最后一次失败的异常
+     * @param exception 失败异常
      */
+    default void handleFailure(Object message, String destination, Object properties, int failureCount, Throwable exception) {
+        // 默认实现调用无参方法，保持向后兼容
+        handleFailure();
+    }
+    
     /**
-     * 处理失败的消息
-     *
-     * @param message 消息内容
-     * @param messageProperties 消息属性，包含不同消息中间件的特殊参数
-     * @param failureCount 失败次数
-     * @param lastError 最后一次失败的异常
+     * 处理失败的消息（简化版本）
+     * 为了向后兼容保留此方法
      */
-    void handleFailure(Object message, Message messageProperties, int failureCount, Throwable lastError);
+    void handleFailure();
 }

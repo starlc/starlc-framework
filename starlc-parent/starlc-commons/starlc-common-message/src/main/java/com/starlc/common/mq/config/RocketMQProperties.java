@@ -7,7 +7,7 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
  * RocketMQ配置属性
  */
 @Data
-@ConfigurationProperties(prefix = "starlc.rocketmq")
+@ConfigurationProperties(prefix = "rocketmq")
 public class RocketMQProperties {
     /**
      * 命名服务器地址
