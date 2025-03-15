@@ -14,8 +14,18 @@
   <dependencies>
     <dependency>
       <groupId>com.starlc</groupId>
+      <artifactId>starlc-demo-api</artifactId>
+      <version>${revision}</version>
+    </dependency>
+    <dependency>
+      <groupId>com.starlc</groupId>
       <artifactId>starlc-async-parent</artifactId>
       <type>pom</type>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.rocketmq</groupId>
+      <artifactId>rocketmq-spring-boot</artifactId>
+      <version>2.0.4</version>
     </dependency>
   </dependencies>
 </project>
